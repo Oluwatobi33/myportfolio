@@ -7,17 +7,20 @@
 .together {
     background-color: #f8fbfe;
 }
-.nav-link:hover {
-    color: red;
-}
 
-.navbar-nav {
-    margin-left: 78px;
-}
 #space a {
     margin-left: 78px;
     color: white;
 }
+a {
+    color: white;
+}
 .nav-link {
-    color: white!important;
+    color: white !important;
+}
+.navbar-brand{
+    color: white! important;
+}
+body{
+    background: unset! important;
 }
