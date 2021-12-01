@@ -15,7 +15,10 @@
 a {
     color: white;
 }
-.nav-link {
+.navbar-light navbar-brand {
+    color: #f8f9fa!important;
+} 
+.nav-item nav-link {
     color: white !important;
 }
 .navbar-brand{
