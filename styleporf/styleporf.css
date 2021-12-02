@@ -16,3 +16,6 @@
 body{
     background: unset! important;
 }
+.nav-link {
+    color: white;
+}
