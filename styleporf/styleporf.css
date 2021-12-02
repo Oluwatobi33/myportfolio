@@ -12,18 +12,7 @@
     margin-left: 78px;
     color: white;
 }
-a {
-    color: white;
-}
-.navbar-light navbar-brand {
-    color: #f8f9fa!important;
-} 
-.nav-item nav-link {
-    color: white !important;
-}
-.navbar-brand{
-    color: white! important;
-}
+
 body{
     background: unset! important;
 }
