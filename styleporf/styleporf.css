@@ -15,6 +15,7 @@
 
 body{
     background: unset! important;
+    font-family: sans-serif;
 }
 .nav-link {
     color: white;
