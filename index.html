@@ -38,30 +38,29 @@
 <body onload="move()">
     <!--Navbar section-->
     <nav class="navbar navbar-expand-md navbar-light  bg-dark">
-        <a href="#" class="navbar-brand text-white"><img src="my pictures/tt.png" width="80" height="auto"
-                class="img-responsive img-fluid"></a>
+        <a href="#" class="navbar-brand px-5 text-white"><img src="my pictures/tt.png" width="80" height="auto" class="img-responsive img-fluid"></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
             <span class="navbar-toggler-icon bg-white text-white"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarMenu">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav mx-auto fs-3">
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-white">Home</a>
+                    <a href="#" class="nav-link text-white h4">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-white">About</a>
+                    <a href="#" class="nav-link text-white  h4">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-white">What I Do</a>
+                    <a href="#" class="nav-link text-white h4">What I Do</a>
                 </li>
                 <li class="nav-item ">
-                    <a href="#" class="nav-link text-white">Latest works</a>
+                    <a href="#" class="nav-link text-white h4">Latest works</a>
                 </li>
                 <li class="nav-item ">
-                    <a href="#" class="nav-link text-white">Testimonial</a>
+                    <a href="#" class="nav-link text-white h4">Testimonial</a>
                 </li>
                 <li class="nav-item Dropdown">
-                    <a href="#" class="nav-link text-white">Contact me</a>
+                    <a href="#" class="nav-link text-white h4">Contact me</a>
                 </li>
             </ul>
         </div>
@@ -385,20 +384,22 @@
                     </div>
                 </div>
                 <div class="col-md-7">
-                    <div class="row d-grid">
-                        <label for="firstName:">First-Name</label>
-                        <input type="text" class="form-control " value="" id="fname" placeholder="Your Name" >
-                        <small id="errorMessage"></small>
-                        <label for="firstName:">Last-Name</label>
-                        <input type="text" class="form-control  mb-3" value="" id="lname" placeholder="Last-Name">
-                        <small id="error11"></small>
-                        <label for="Email:">Email</label>
-                        <input type="text" class="form-control  " value="" id="email" placeholder="Email">
-                        <small id="error22"></small>
-                        <label for="Email:">Password</label>
-                        <input type="text" class="form-control mb-2 " value="" id="pass" placeholder="Password">
-                        <small id="error33"></small>
-                        <button type="submit" class="btn btn-danger " onclick="send()">Send Message</button>
+                    <div class="row">
+                        <div class="col-md-12 d-grid">
+                            <label for="firstName:">First-Name</label>
+                            <input type="text" class="form-control " value="" id="fname" placeholder="Your Name" >
+                            <small id="errorMessage"></small>
+                            <label for="firstName:">Last-Name</label>
+                            <input type="text" class="form-control  mb-3" value="" id="lname" placeholder="Last-Name">
+                            <small id="error11"></small>
+                            <label for="Email:">Email</label>
+                            <input type="text" class="form-control  " value="" id="email" placeholder="Email">
+                            <small id="error22"></small>
+                            <label for="Email:">Password</label>
+                            <input type="text" class="form-control mb-2 " value="" id="pass" placeholder="Password">
+                            <small id="error33"></small>
+                            <button type="submit" class="btn btn-danger " onclick="send()">Send Message</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -406,7 +407,7 @@
     </section>
     <!--contact section end-->
     <!--footer start-->
-    <footer class="footer1 border-top py-4 shadow-lg">
+    <footer class="footer1 border-top py-2 shadow-lg">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12">

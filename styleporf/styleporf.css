@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
 .ope {
     background: red;
 }
@@ -12,11 +17,17 @@
     margin-left: 78px;
     color: white;
 }
-
+.tobi a  {
+    font-size: 40px;
+}
 body{
     background: unset! important;
     font-family: sans-serif;
 }
-.nav-link {
+/* .nav-link {
     color: white;
+    font-size: 34px;
+} */
+.nav-link {
+    font-size: 30px;
 }
