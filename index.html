@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <title>MY portfolio</title>
     <meta charset="utf-8">
@@ -22,29 +21,7 @@
             box-shadow: 0 0 9px 2px rgb(100, 100, 100, 0.30);
     }
     </style>
-     <script>
-        var i = 0;
-        function move(){
-            if (i == 0) {
-                i=1;
-                var elem =document.getElementById("mm", "mm2");
-                var width = 10;
-                var id = setInterval(frame,3);
-                function frame() {
-                    if(width>=100){
-                        clearInterval(id,id);
-                        i=0;
-                    }else{
-                        width++
-                        elem.style.width = width + "%";
-                        elem.innerHTML =  width + "%";
-                    }
-                    
-
-                }
-            }
-        }
-    </script>
+    
 </head>
 <body>
     <!--Navbar section-->
@@ -62,7 +39,7 @@
                     <a href="#about" class="nav-link text-white">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#What I Do" class="nav-link text-white>What I Do"></a>
+                    <a href="#What I Do" class="nav-link text-white">What I Do</a>
                 </li>
                 <li class="nav-item ">
                     <a href="#Latest works" class="nav-link text-white" >Latest works</a>
@@ -85,13 +62,13 @@
                         class="img-responsive rounded-circle img-fluid">
                 </div>
                 <div class="col-lg-6 order-md-first mt-5 ">
-                    <p class="text-default mb-2 display-4" id="line2 >Hello I am a</p>
-                    <h1 class="text-default text-uppercase display-5 fw-bold">Website Developer</h1>
-                    <h2 class=" fw-bold display-4">Bakare Oluwatobi Emmanuel</h2>
-                    <p class="mt-4 text-dark fw-bold display-5  fs-5 text-uppercase">I am a  professional website
-                    designer,<br>I design portfolio,<br>E-commerce Website,<br>Business website,<br>Educational
-                    website,<br> Online Hospital etc</p>
-                    <a href="#portfolio" class=" btn btn-danger btn-lg px-3 mt-2">My work</a>
+                    <div>
+                        <p class="text-default mb-2 display-4" id="line2">Hello I am a</p>
+                        <h1 class="text-default text-uppercase display-5 fw-bold">Website Developer</h1>
+                        <h2 class=" fw-bold display-4">Bakare Oluwatobi Emmanuel</h2>
+                        <p class="mt-4 text-dark fw-bold display-5  fs-5 text-uppercase" id="take" ></p>
+                        <a href="#portfolio" class=" btn btn-danger btn-lg px-3 mt-2" onclick="type()">My work</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -408,13 +385,21 @@
                             <label for="Email:">Password</label>
                             <input type="text" class="form-control mb-2 " value="" id="pass" placeholder="Password">
                             <small id="error33"></small>
-                            <button type="submit" class="btn btn-danger " onclick="send()">Send Message</button>
+                            <button type="submit" class="btn btn-danger " onclick="send()">Send Message</button>  
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
     </section>
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="float-end">
+                <a  href="https://wa.me/07032437182" target="_blank"><img src="./pictures/WhatsApp_.webp" class="img-responsive img-fluid" style="width:70px; height: 55px;"></a>
+            </div>
+        </div>            
+    </div>
     <!--contact section end-->
     <!--footer start-->
     <footer class="footer1 border-top py-2 shadow-lg">
@@ -480,9 +465,43 @@
         }
     </script>
     <script>
+        
+        var i = 0;
+        function move(){
+            if (i == 0) {
+                i=1;
+                var elem =document.getElementById("mm");
+                var width = 10;
+                var id = setInterval(frame,3);
+                function frame() {
+                    if(width>=100){
+                        clearInterval(id,id);
+                        i=0;
+                    }else{
+                        width++
+                        elem.style.width = width + "%";
+                        elem.innerHTML =  width + "%";
+                    }
+                    
+
+                }
+            }
+        }
+        var i = 0;
+        var txt = 'Lorem ipsum typing effect!'; /* The text */
+        var speed = 1000; /* The speed/duration of the effect in milliseconds */
+        function typeWriter(){
+            if (i < txt.length){
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
+    <script>
         AOS.init();
         $('.carousel').carousel({
-              interval: 3000
+            interval: 1000
       })
     </script>
     <!--vendor files-->
