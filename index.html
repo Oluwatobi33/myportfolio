@@ -115,7 +115,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="align-items-center">
-                                <a href="#" class="btn btn-danger text-white dd mx-3 mb-4">Download CV</a>
+                                <a href="./pictures/BAKARE.zip" download class="btn btn-danger text-white dd mx-3 mb-4">Download CV</a>
                             </div>
                             <div class="row">
                                 <div class=" col-sm-4 col-md-4 ">
@@ -176,7 +176,7 @@
             </div>
         </div>
     </div>
-    <div class="container bg-danger">
+    <div class="container">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -426,28 +426,28 @@
             if (!fnRegex.test(fname.value))
             {
                 fname.className = "form-control is-invalid border border-3 mt-2 border-danger";
-                errorMessage.innerText = "input at least 2 characters";
+                errorMessage.innerText = "input at least 4 characters";
                 errorMessage.style.color = "red";
             }
             else
             {
                 errorMessage.className = "form-control is-valid alert alert-success";
-                errorMessage.innerText = "Accepted";
+                errorMessage.innerText = "";
                
             }
             fnRegex = /[\w]{3,}/;
             if(!fnRegex.test(lname.value)){
                 lname.className = "form-control is-invalid border border-3 border-danger";
-                error11.innerText = "input at least 9 characters";
+                error11.innerText = "input at least 3";
                 error11.style.color = "red";
             }else{
                 error11.className = "form-control is-valid";
                 error11.innerText = ""; 
             }
-            emailRegex = /^([\w]{4,})([@])([.])([a-z])$/
+            emailRegex = /^([\w]{7,})([@])([.])([a-z])$/
             if(!emailRegex.test(email.value)){
                 email.className = "form-control is-invalid border border-3 border-danger";
-                error22.innerText = "Input a least 3 input";
+                error22.innerText = "Input a least 7 input";
                 error22.style.color = "red";
             }else{
                errror22.className = "form-control is-valid";
@@ -456,7 +456,7 @@
             passRegex = /^([\w]{6,})$/
             if(!passRegex.test(pass.value)){
                 pass.className = "form-control is-invalid border border-3 border-danger";
-                error33.innerText = "Input a least 3 input";
+                error33.innerText = "Input a least 6 input";
                 error33.style.color = "red";
             }else{
                errror33.className = "form-control is-valid";
